@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledgebase</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <div class="webchat-header">
+            <div id="navbar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times</a>
+                <a href="./customerServ.html">Customer Service</a>
+                <a href="./complaints.html">Complaints</a>
+                <a href="./creditControl.html">Credit Control</a>
+                <a href="./metering.html">Metering</a>
+                <a href="./cots.html">Change of tenancy</a>
+                <a href="./webchat.html">WebChat</a>
+                <a class="pages" href="./index.html">Home Page</a>
+            </div>
+            <div class="sidebar">
+                <button class="openbtn" onclick="openNav()">☰</button>
+            </div>
+            <div class="notification">
+                <button type="button" class="icon-button">
+                    <span class="material-icons">notifications</span>
+                    <span class="icon-button__badge">2</span>
+                  </button>
+            </div>
+                <h2 class="webchat-h2">
+                    CUSTOMER SERVICE TEAM
+                </h2>
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                    <button class="btn btn-search" type="button">
+                        <i class="fa fa-search fa-fw">
+                        </i>
+                        Search
+                    </button>
+                </span>
+            </div>
+            
+            
+
+        </div>
+        <!-- ending of the header -->
+        <button class="accordion">Introduction</button>
+        <div class="panel">
+            <p>
+                <li>
+                    <ul>Great the customer</ul>
+                    <ul>Welcome them to BES</ul>
+                    <ul>Introduce yourself</ul>
+                    <ul>Ask customer's BES customer number or account number or post code with business name</ul>
+                </li>
+            </p>
+        </div>
+        <button class="accordion">Data protection</button>
+        <div class="panel">
+            <p>
+                <li>
+                 <ul>Ask customer's full name</ul>
+                 <ul>if named;</ul>
+                 <ul>Ask customer password</ul>
+                 <ul>If password incorrect or forgotten;</ul>
+                 <ul>Ask any 3 securtiy questions</ul>
+                 <ul><a href="./webchat.html#dpa_pass">Click here for DPA procedure</a></ul>
+                 <ul>if customer is not named on the account, check if the company is a limited company</ul>
+                 <ul><h5>data protecion passed; go ahead to health check question</h5></ul>
+                </li>
+            </p>
+        </div>
+        <button class="accordion">Health check</button>
+        <div class="panel">
+            <p>
+                 <li>
+                     <ul>
+                         Do you have any recent changes took place on your account?
+                     </ul>
+                     <ul>if yes, advise the customer to send account updates to LOA
+                        <a href="#">Check contact details</a>
+                     </ul>
+                     <ul>if no changes; go ahead to promote the online portal</ul>
+                 </li>
+            </p>
+        </div>
+        <button class="accordion">Promote online portal</button>
+        <div class="panel">
+            <p>
+                 <li>
+                     <ul>Check if the customer is registered on the online portal</ul>
+                     <ul>
+                        If they are not registered; send them a link to register
+                     </ul>
+                     <ul style="font-style: italic;">Educate the customer if they are aware that by utilizing the portal they will be able to
+                         download their lates invoices, submit reads if you do not have a smart meter, complete business move forms
+                         for changing of tenancy purposes, update their details, receive documents and make payments.
+                     </ul>
+                     <ul>If customer's account do not show results on the portal:raise a ticket to get their email address 
+                         and account number linked to the portal.
+                     </ul>
+                     <ul>
+                         <a href="correspondence.html#tickets">Click here to choose the right ticket open</a></ul>
+                 </li>
+            </p>
+        </div>
+        <button class="accordion">Account information check</button>
+        <div class="panel">
+            <p>
+                 <li>
+                     <ul>Check if the customer is not in a state to renew their contract</ul>
+                     <ul>Promote hot key if required</ul>
+                     <ul><a href="#">More about rates</a></ul>
+                     <ul>Check if the customer do not need meter upgrade <a href="#">Check meter types and benefits</a></ul>
+                     <ul>Promote smart meter if required</ul>
+                     <ul>Check if reads are up to date</ul>
+                     <ul>Obtain reads if necessary, if customer is not onsite, advise to send them to Picture reads email
+                         <a href="#">Check contact details</a>
+                     </ul>
+                     <ul>Check DD if it's active on the account, if not promote Direct Debit 
+                        <a href="#">Check DD benefits</a>
+                     </ul>
+                 </li>
+            </p>
+        </div>
+        <button class="accordion">Query FAQ</button>
+        <div class="panel">
+            <p>
+                 <li>
+                     <ul><h5>What is the customer's query about?</h5></ul>
+                     <ul><a href="#">Billing</a></ul>
+                     <ul><a href="#">EBRS AND EBDS</a></ul>
+                     <ul><a href="#">Correspondence</a></ul>
+                     <ul><a href="#">Metering</a></ul>
+                     <ul><a href="#">Change of tenancy</a></ul>
+                 </li>
+            </p>
+        </div>
+        <button class="accordion"></button>
+        <button class="accordion"></button>
+        <button class="accordion"></button>
+        <button class="accordion"></button>
+        <button class="accordion"></button>
+        <button class="accordion"></button>
+        <button class="accordion"></button>
+        <button class="accordion"></button>
+        
+    </div>
+    <!-- <div class="footering">
+        <p class="index-footer">
+            copy@ 2023 Thatohatsi
+        </p>
+    </div> -->
+    <script>
+        function openNav(){
+            document.getElementById("navbar").style.width = "250px";
+            document.getElementsByClassName("sidebar").style.width = "250px";
+        }
+
+        function closeNav(){
+            document.getElementById("navbar").style.width = "0";
+            document.getElementsByClassName("sidebar").style.width = "0";
+        }
+    </script>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+
+                var panel = this.nextElementSibling;
+                
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }       
+</script>
+</body>
+</html>

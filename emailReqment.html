@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledgebase</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="webchat-header">
+            <div id="navbar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times</a>
+                <a href="./customerServ.html">Customer Service</a>
+                <a href="./complaints.html">Complaints</a>
+                <a href="./creditControl.html">Credit Control</a>
+                <a href="./metering.html">Metering</a>
+                <a href="./cots.html">Change of tenancy</a>
+                <a href="./webchat.html">WebChat</a>
+                <a class="pages" href="./index.html">Home Page</a>
+            </div>
+            <div class="sidebar">
+                <button class="openbtn" onclick="openNav()">☰</button>
+            </div>
+            <div class="notification">
+                <button type="button" class="icon-button">
+                    <span class="material-icons">notifications</span>
+                    <span class="icon-button__badge">2</span>
+                  </button>
+            </div>
+            <h2 class="webchat-h2">
+                WEBCHAT TEAM
+            </h2>
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search for...">
+            <span class="input-group-btn">
+                <button class="btn btn-search" type="button">
+                    <i class="fa fa-search fa-fw">
+                    </i>
+                    Search
+                </button>
+            </span>
+        </div>
+        
+
+    </div>
+        <h6 class="email-requirement-heading1">
+            Email requirements
+        </h6>
+        <p class="email-p1">
+            No email are to be transfered to the BO queues.
+            Only email are to be transfered to the Change of Tenancy (COT) queue if the email is related to COT request.
+            If an email is received the entire chain needs to be reviewed and the appropriate action being taken in line with the process.
+            All email need to be worked accordingly and dispositioned in line with action taken to be removed from the queue as completed.
+
+        </p>
+        <p class="email-list-heading">If you are due for break, break status must be requested as follows:</p>
+        <ul class="email-requirement-list">
+            <li>5 or more in your queue - Aux break 10 mins prior</li>
+            <li>4 or more in a queue - Aux break 8 mins prior</li>
+            <li>3 or less in a queue - Aux break 6 mins prior</li>
+        </ul>
+        <p class="more-on-emails">
+            If an email is received into the incorrect email box and that email can be worked, then the agent will be expected
+            to work the email and disposition it per the action taken.
+            if the email cannot be worked, due to the email not populating the account the and the  email is for the termination box
+            and LOA box then the agent is expected to send no auth/third party email.
+            
+        </p>
+    </div>
+    <h5>
+        Choose Knowledge page below;
+    </h5>
+
+    <div class="chat-links">
+        <a class="chat-link" href="./emailReqment.html"> Email requirements</a>
+        <a class="chat-link" href="./chatReqment.html"> Chat requirements</a>
+        <a class="chat-link" href="/ebrs">EBRS AND EBDS</a>
+        <a class="chat-link" href="/rates">Rates</a>
+        <a class="chat-link" href="/gas-price">Gas prices</a>
+        
+    </div>
+    <a class="pages" href="./webchat.html">Previous Page</a>
+        <a class="pages" href="./index.html">Home Page</a>
+    <div class="footering">
+        <p class="index-footer">
+            copy@ 2023 Thatohatsi
+        </p>
+    </div>
+    <script>
+        function openNav(){
+            document.getElementById("navbar").style.width = "250px";
+            document.getElementsByClassName("sidebar").style.width = "250px";
+        }
+
+        function closeNav(){
+            document.getElementById("navbar").style.width = "0";
+            document.getElementsByClassName("sidebar").style.width = "0";
+        }
+    </script>
+</body>
+</html>
